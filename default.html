@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<Title>Le Boston Bar</Title>
+		<link rel="stylesheet" href="css/styleCust.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/socialIcons.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="./jscript/jscript.js"></script>
+		 <script src="./jscript/swiper.min.js"></script>
+	</head>
+	<body class ="main">
+		<div id="banner" name="banniere">
+			<img src="./images/bannerPlaceholder.png" alt="Banner" width="100%"/>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="default.html">CONTACTEZ-NOUS</a></li>
+				<li><a href="default.html">PHOTOS</a></li>
+				<li><a href="default.html">CONCOURS</a></li>
+				<li><a href="default.html">EVENEMENTS</a></li>
+				<li><a href="#banniere">ACCUEIL</a></li>
+			</ul>
+		</div>
+		<div id="mainContent">
+			<div id="scrollingContent" class="swiper-container">
+					<div class = "swiper-wrapper">
+						<div class="swiper-slide"><img src="./images/dj.jpg"/></div>
+						<div class="swiper-slide"><img src="./images/dj2.jpg"/></div>
+						<div class="swiper-slide"><img src="./images/dj3.jpg"/></div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next"></div>
+		        	<div class="swiper-button-prev"></div>
+	        </div>
+			<div id="sideContent">
+				<div id ="topSideContent">
+					<h4>PLACEHOLDER</h4>
+				</div>
+				<div id="bottomSideContent">
+					<h4>PLACEHOLDER</h4>
+				</div>
+			</div>
+		</div>
+		<div id="extraContent">
+			PLACEHOLDER
+		</div>
+		<div class="footer">
+			<ul>
+				<li class="socialMediaBtn facebookBtn"><a href="https://www.facebook.com/leboston.bar.7/" title="Facebook"></a></li>
+				<li class="socialMediaBtn twitterBtn"><a href="https://twitter.com/boston_bar" title="Twitter"></a></li>
+				<li class="socialMediaBtn instagramBtn"><a href="https://twitter.com/boston_bar" title="Instagram"></a></li>
+			</ul>
+		</div>
+		<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+    </script>
+	</body>
+</html>
