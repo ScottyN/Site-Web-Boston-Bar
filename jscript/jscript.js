@@ -11,7 +11,10 @@ var main = function(){
 	$('#bottomSideContent').mouseout(function(){
 		$(this).fadeTo(600, 1);
 	});
-
+	$('body').click(function(){
+		$('#yt').hide();
+		$('body > *').css("opacity", 1);
+	});
 };
 
 
