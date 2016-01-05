@@ -16,8 +16,7 @@ margin-right:auto;
 }
 
 #banner{
-	background-repeat: no-repeat;
-	background-size: contain;
+	text-align: center;
 }
 
 body{
@@ -34,13 +33,44 @@ h4{
 	pointer-events: none;
 }
 
-
-#menu ul li{
-	display: inline-block;
-	color: #fff;
-	padding: 0 2%;
-	float: right;
+#mainMenu{
+	margin: 0 auto;
+	padding-top: 2%;
+	width: 70%;
+	display: table;
+	table-layout: fixed;
+	padding-left: 0;
 }
+
+.menuItem{
+	width: auto;
+	color: #fff;
+	display: table-cell;
+	text-align: center;
+}
+
+.submenu{
+	display: none;
+	list-style-type: none;	
+	width: 14%;
+	position: absolute;
+	z-index: 10;
+}
+
+.submenu li{
+	padding-top: 5px;
+}
+
+.menuHoveeredItem{
+	position: relative;
+	text-align: center;
+}
+
+.menuHoveredItem:hover > ul{
+	display: block;
+	padding-left: 0;
+}
+
 
 li a{
 	color: #fff;
@@ -51,41 +81,52 @@ li a{
 	margin: 0 auto;
 	margin-top: 4%;
 	width: 70%;
-	height: 400px;
+	height: 960px;
 	position: relative;
+	padding-bottom: 35px;
 }
 
 #scrollingContent{
-	width: 50%;
+	width: 60%;
 	position: absolute;
-	height: 390px;
+	height: 960px;
+	text-align: center;
 }
 
 #sideContent{
-	width: 50%;
+	width: 40%;
 	float: right;
-	height: 390px;
+	height: 960px;
 	position: relative;
 }
 
 #topSideContent{
-	background: url("../images/drink.jpg");
 	width: 100%;
 	height: 50%;
 	cursor: pointer;
-	vertical-align: bottom;
-	display:flex;
+	position: relative;
+}
+
+#bgContentTop{
+	width: 100%;
+	height: 100%;
+	background: url("../images/dj5.jpg");
 }
 
 #topSideContent h4{
-	display: inline-block;
-  	align-self: flex-end;
-  	position: relative;
+  	position: absolute;
   	left: 30px;
+  	bottom:5px;
+  	z-index: 2;
+}
+
+#bgContentBottom{
+	width: 100%;
+	height: 100%;
+	background: url("../images/elBB.jpg");
 }
 
 #bottomSideContent{
-	background: url("../images/nightclub.jpg");
 	width:100%;
 	height:50%;
 	cursor: pointer;
@@ -93,10 +134,10 @@ li a{
 }
 
 #bottomSideContent h4{
-	display: inline-block;
-	align-self: flex-end;
-	position: relative;
-	left: 30px;
+ 	position: absolute;
+  	left: 30px;
+  	bottom:5px;
+  	z-index: 2;
 }
 
 #extraContent{
@@ -140,6 +181,7 @@ li.socialMediaBtn a{
 	width: 100%;
 	position: fixed;
 	bottom: 0px;
+	margin-top: 35px;
 	background-color: black;
 	z-index: 100000;
 }
@@ -150,4 +192,24 @@ li.socialMediaBtn a{
 	left: 50%;
 	margin-top: -162px;
 	margin-left: -280px;
+}
+
+#seeInside{
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom:35px;
+}
+
+.fb_iframe_widget span{        
+        overflow: initial !important;
+    }
+    .fb_iframe_widget iframe{        
+        width: 500px !important;
+        height: 700px !important;    
+    }
+
+#eventContainer{
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 5%;
 }

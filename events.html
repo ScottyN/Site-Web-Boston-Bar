@@ -7,43 +7,44 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/styleCust.css" />
 </head>
+
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="banner" name="banniere">
-			<img src="./images/bannerPlaceholder.png" alt="Banner" width="100%"/>
-	</div>
+			<div id="logo">
+				<img src="./images/logo boston bar-scaled.png"/>
+			</div>
+		</div>
 		<div id="menu">
-			<ul>
-				<li><a href="default.html">CONTACTEZ-NOUS</a></li>
-				<li><a href="default.html">PHOTOS</a></li>
-				<li><a href="default.html">CONCOURS</a></li>
-				<li><a href="default.html">EVENEMENTS</a></li>
-				<li><a href="default.html">ACCUEIL</a></li>
+			<ul id="mainMenu">
+				<li class="menuItem"><a href="default.html">ACCUEIL</a></li>
+				<li class="menuItem"><a href="default.html">EVENEMENTS</a></li>
+				<li class="menuItem"><a href="default.html">DJs</a></li>
+				<li class="menuHoveredItem menuItem"><a href="events.html">GALLERIE</a>
+					<ul class="submenu">
+						<li><a href="default.html">PHOTOS</a></li>
+						<li><a href="default.html">VIDEOS</a></li>
+					</ul>
+				</li>
+				<li class="menuItem"><a href="#banniere">VISITE VIRTUELLE</a></li>
 			</ul>
 		</div>
-	<div id="calContainer">
-		<div id="calHead">
-			<div class="calHeadDay" id="Monday">
-				<h2>MONDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Tuesday">
-				<h2>TUESDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Wednesday">
-				<h2>WEDNESDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Thursday">
-				<h2>THURSDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Friday">
-				<h2>FRIDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Saturday">
-				<h2>SATURDAY</h2>
-			</div>
-			<div class="calHeadDay" id="Sunday">
-				<h2>SUNDAY</h2>
-			</div>
-		</div>
+	<div id="eventContainer">
+		<div class="fb-page" data-href="https://www.facebook.com/le.boston.bar.7" data-tabs="events" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/le.boston.bar.7"><a href="https://www.facebook.com/le.boston.bar.7">Le Boston Bar</a></blockquote></div></div>
+	</div>
+	<div class="footer">
+			<ul>
+				<li class="socialMediaBtn facebookBtn"><a href="https://www.facebook.com/leboston.bar.7/" title="Facebook"></a></li>
+				<li class="socialMediaBtn twitterBtn"><a href="https://twitter.com/boston_bar" title="Twitter"></a></li>
+				<li class="socialMediaBtn instagramBtn"><a href="https://twitter.com/boston_bar" title="Instagram"></a></li>
+			</ul>
 	</div>
 </body>
 </html>

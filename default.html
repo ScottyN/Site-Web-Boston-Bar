@@ -12,23 +12,30 @@
 	</head>
 	<body class ="main">
 		<div id="banner" name="banniere">
-			<img src="./images/bannerPlaceholder.png" alt="Banner" width="100%"/>
+			<div id="logo">
+				<img src="./images/logo boston bar-scaled.png"/>
+			</div>
 		</div>
 		<div id="menu">
-			<ul>
-				<li><a href="default.html">CONTACTEZ-NOUS</a></li>
-				<li><a href="default.html">PHOTOS</a></li>
-				<li><a href="default.html">CONCOURS</a></li>
-				<li><a href="events.html">EVENEMENTS</a></li>
-				<li><a href="#banniere">ACCUEIL</a></li>
+			<ul id="mainMenu">
+				<li class="menuItem"><a href="default.html">ACCUEIL</a></li>
+				<li class="menuItem"><a href="default.html">EVENEMENTS</a></li>
+				<li class="menuItem"><a href="default.html">DJs</a></li>
+				<li class="menuHoveredItem menuItem"><a href="events.html">GALLERIE</a>
+					<ul class="submenu">
+						<li><a href="default.html">PHOTOS</a></li>
+						<li><a href="default.html">VIDEOS</a></li>
+					</ul>
+				</li>
+				<li class="menuItem"><a href="#banniere">VISITE VIRTUELLE</a></li>
 			</ul>
 		</div>
 		<div id="mainContent">
 			<div id="scrollingContent" class="swiper-container">
 					<div class = "swiper-wrapper">
-						<div class="swiper-slide"><img src="./images/dj.jpg"/></div>
-						<div class="swiper-slide"><img src="./images/dj2.jpg"/></div>
-						<div class="swiper-slide"><img src="./images/dj3.jpg"/></div>
+						<div class="swiper-slide"><img src="./images/flyer1.jpg"/></div>
+						<div class="swiper-slide"><img src="./images/flyer2.jpg"/></div>
+						<div class="swiper-slide"><img src="./images/flyer3.jpg"/></div>
 						<div class="swiper-pagination"></div>
 					</div>
 					<div class="swiper-pagination"></div>
@@ -36,16 +43,17 @@
 		        	<div class="swiper-button-prev"></div>
 	        </div>
 			<div id="sideContent">
-				<div id ="topSideContent">
-					<h4>PLACEHOLDER</h4>
+				<div id="topSideContent">
+					<div id ="bgContentTop" class="fading">
+					</div>
+					<h4 class="shinyText">DJs</h4>
 				</div>
 				<div id="bottomSideContent">
-					<h4>PLACEHOLDER</h4>
+					<div id ="bgContentBottom" class="fading">
+					</div>
+					<h4 class="shinyText">PHOTOS</h4>
 				</div>
 			</div>
-		</div>
-		<div id="extraContent">
-			PLACEHOLDER
 		</div>
 		<div class="footer">
 			<ul>
@@ -74,6 +82,7 @@
         slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 30,
+        autoplay: 5000,
         loop: true
     });
     </script>
