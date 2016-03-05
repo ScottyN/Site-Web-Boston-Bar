@@ -1,18 +1,23 @@
-.main
-{width:100%;
-margin-left:auto; 
-
-margin-right:auto;
-
-
+html { 
+  background: url("../images/mainBG.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
 }
+
+.main{
+width:100%;
+margin-left:auto; 
+margin-right:auto;
+}
+
 .content
 {
 width:80%;
 margin-left:auto; 
-
 margin-right:auto;
-
 }
 
 #banner{
@@ -20,7 +25,6 @@ margin-right:auto;
 }
 
 body{
-	background: #000;
 	padding-bottom: 50px;
 }
 
@@ -59,6 +63,11 @@ h4{
 
 .submenu li{
 	padding-top: 5px;
+}
+
+.submenu li a:hover{
+	color: red;
+	background-color: #fff;
 }
 
 .menuHoveeredItem{
@@ -212,4 +221,43 @@ li.socialMediaBtn a{
 	width: 500px;
 	margin: 0 auto;
 	padding-top: 5%;
+}
+
+#wrapper{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.djBox{
+	display: inline-block;
+	padding: 4%;
+}
+
+#photoMain{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.glryFrame{
+	display: inline-block;
+	padding: 4%;
+}
+
+th{
+	color: white;
+	margin-bottom: 10px;
+	font: 
+}
+
+.mainPhotoGallery{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.photoWrapper{
+	width:100%;
+	text-align: center;
 }
