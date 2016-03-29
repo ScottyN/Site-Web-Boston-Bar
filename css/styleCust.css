@@ -21,6 +21,9 @@ margin-right:auto;
 }
 
 #banner{
+	width: 70%;
+	margin: 0 auto;
+	background-color: black;
 	text-align: center;
 }
 
@@ -37,10 +40,16 @@ h4{
 	pointer-events: none;
 }
 
+#menu{
+	width: 70%;
+	margin: 0 auto;
+	background-color: black;
+}
+
 #mainMenu{
 	margin: 0 auto;
 	padding-top: 2%;
-	width: 70%;
+	width: 100%;
 	display: table;
 	table-layout: fixed;
 	padding-left: 0;
@@ -88,11 +97,12 @@ li a{
 
 #mainContent{
 	margin: 0 auto;
-	margin-top: 4%;
+	padding-top: 4%;
 	width: 70%;
 	height: 960px;
 	position: relative;
 	padding-bottom: 35px;
+	background-color: black;
 }
 
 #scrollingContent{
@@ -199,11 +209,14 @@ li.socialMediaBtn a{
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	margin-top: -162px;
-	margin-left: -280px;
+	margin-top: -257px;
+	margin-left: -380px;
 }
 
 #seeInside{
+	width: 70%;
+	margin: 0 auto;
+	background-color: black;
 	text-align: center;
 	padding-top: 2%;
 	padding-bottom:35px;
@@ -218,15 +231,18 @@ li.socialMediaBtn a{
     }
 
 #eventContainer{
-	width: 500px;
+	width: 70%;
+	background-color: black;
 	margin: 0 auto;
 	padding-top: 5%;
+	text-align: center;
 }
 
 #wrapper{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	text-align: center;
+	background-color: black;
 }
 
 .djBox{
@@ -235,8 +251,9 @@ li.socialMediaBtn a{
 }
 
 #photoMain{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
+	background-color: black;
 	text-align: center;
 }
 
@@ -252,12 +269,19 @@ th{
 }
 
 .mainPhotoGallery{
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
+	background-color: black;
 	padding-top: 20px;
 }
 
 .photoWrapper{
 	width:100%;
 	text-align: center;
+}
+
+.eventBox{
+
+	display: inline-block;
+	padding: 4%;
 }
